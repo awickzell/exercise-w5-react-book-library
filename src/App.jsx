@@ -1,13 +1,14 @@
 import './App.css';
 import data from './data.json';
 import Book from './Book';
+import Header from './Header';
 
 function App() {
   const { books } = data;
 
   return (
     <div className="book-container">
-      <h1>THE LIBRARY</h1>
+      <Header />
       {books.map((book, index) => (
         <Book
           key={index}
